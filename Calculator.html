@@ -3,15 +3,18 @@
 <head>
     <title> Calculator </title>
     <style>
+        <!--Adjust background color grey -->
         body{
         background:grey;
       }
+       <! Add in a border box-->
       *{
         box-sizing:border-box;
        -webkit-box-sizing:border-box;
        -moz-box-sizing:border-box;
 
      }
+      <!-- Size and Color for Input -->
     .wrap{
         width:450px;
         margin:auto;
@@ -20,6 +23,7 @@
         padding:15px;
     }
 
+     <!-- Style font and size for type text -->
     input[type=text]{
     width:100%;
     padding:20px;
@@ -35,7 +39,7 @@
     font-width:bold;
     border-radius:5px;
     }
-
+<!-- Clear button style -->
    #Clear{
     width:100%;
     }
@@ -47,26 +51,37 @@
         <input type="text" name="display">
         <br><br>
 
+            <!-- Display number -->
             <input type="button" value="7" onclick="calc.display.value+='7'" >
             <input type="button" value="8" onclick="calc.display.value+='8'">
             <input type="button" value="9" onclick="calc.display.value+='9'">
+            
+            <!-- Equal will display the value -->
             <input type="button" value="=" onclick="calc.display.value =eval(calc.display.value)">
         <br><br>
+            
+            <!-- Display numbers -->
             <input type="button" value="4" onclick="calc.display.value+='4'">
             <input type="button" value="5" onclick="calc.display.value+='5'">
             <input type="button" value="6" onclick="calc.display.value+='6'">
              <input type="button" value="*" onclick="calc.display.value+='*'">
         <br><br>
+            
+            <!-- Display numbers -->
             <input type="button" value="1" onclick="calc.display.value+='1'">
             <input type="button" value="2" onclick="calc.display.value+='2'">
             <input type="button" value="3" onclick="calc.display.value+='3'">
             <input type="button" value="-" onclick="calc.display.value+='-'">
         <br><br>
+            
+            <!-- Display numbers -->
             <input type="button" value="0" onclick="calc.display.value+='0'">
              <input type="button" value="%" onclick="calc.display.value+='%'">
             <input type="button" value="/" onclick="calc.display.value+='/'">
             <input type="button" value="+" onclick="calc.display.value+='+'">
         <br><br>
+            
+         <!-- Display Clear and have input to clear -->
         <input type="button" value="Clear" onclick="calc.display.value=' '" id="Clear">
     </form>
     </div>
