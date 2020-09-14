@@ -30,7 +30,7 @@ int main() {
 
 	//method sort song from begin to end alphabetical order
 	sort(song.begin(), song.end());
-	//print out names
+	//print out track song
 		for (int i = 0; i <= song.size(); i++) {
 			cout << song[i] << endl;
 		}
